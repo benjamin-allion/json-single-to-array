@@ -20,7 +20,7 @@ describe('normalizer.js', () => {
 });
 
 describe('normalizer.js', () => {
-  it('try to normalize json data from json schema', async () => {
+  it('try to normalize json data from json schema', async() => {
     // Given
     const jsonToNormalize = {
       fields: {
@@ -78,7 +78,7 @@ describe('normalizer.js', () => {
     expect(typeof result.fields.active === 'boolean').toBe(true);
   });
 
-  it('try to normalize json data that should not be normalized from json schema', async () => {
+  it('try to normalize json data that should not be normalized from json schema', async() => {
     // Given
     const jsonToNormalize = {
       fields: {
@@ -143,7 +143,7 @@ describe('normalizer.js', () => {
     expect(result.fields.externalField).toBe(null);
   });
 
-  it('should normalize jsonData with specific normalization type field name (See #13)', async () => {
+  it('should normalize jsonData with specific normalization type field name (See #13)', async() => {
     // Given
     const jsonData = { data: { enable: 'true' } };
     const jsonSchema = {
@@ -165,7 +165,7 @@ describe('normalizer.js', () => {
     expect(typeof result.data.enable).toBe('boolean');
   });
 
-  it('should normalize jsonData with specific normalization format field name (See #19)', async () => {
+  it('should normalize jsonData with specific normalization format field name (See #19)', async() => {
     // Given
     const jsonData = {
       data: {
@@ -203,7 +203,7 @@ describe('normalizer.js', () => {
     expect(result).toStrictEqual(expectedResult);
   });
 
-  it('should normalize jsonData from JsonSchema with type & format definitions', async () => {
+  it('should normalize jsonData from JsonSchema with type & format definitions', async() => {
     // Given
     const jsonData = {
       data: {
@@ -243,7 +243,7 @@ describe('normalizer.js', () => {
     expect(result).toStrictEqual(expectedResult);
   });
 
-  it('should normalize jsonData from JsonPaths with type & format definitions', async () => {
+  it('should normalize jsonData from JsonPaths with type & format definitions', async() => {
     // Given
     const jsonData = {
       data: {
@@ -281,7 +281,7 @@ describe('normalizer.js', () => {
     expect(result).toStrictEqual(expectedResult);
   });
 
-  it('should not normalize paths matching an exclude path', async () => {
+  it('should not normalize paths matching an exclude path', async() => {
     // Given
     const jsonToNormalize = {
       fields: {

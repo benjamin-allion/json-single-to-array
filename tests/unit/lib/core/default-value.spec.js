@@ -1,7 +1,7 @@
 const JsonNodeNormalizer = require('../../../../index');
 
 describe('normalizer.js', () => {
-  it('Should normalize and add default values if field is undefined', async () => {
+  it('Should normalize and add default values if field is undefined', async() => {
     // Given
     const jsonToNormalize = {
       fields: {

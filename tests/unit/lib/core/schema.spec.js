@@ -2,7 +2,7 @@ const { deReferenceSchema, _getFieldPaths, getFieldsToNormalize } = require('../
 const { schemaWithRef } = require('../../mock-sample/json-schema');
 
 describe('schema.js', () => {
-  it('try to dereference a Json Schema', async () => {
+  it('try to dereference a Json Schema', async() => {
     const schemaWithoutRef = await deReferenceSchema(schemaWithRef);
     expect(schemaWithRef.properties.vegetables.items).not.toHaveProperty('properties');
     expect(schemaWithRef.properties.vegetables.items).toHaveProperty('$ref');
@@ -13,7 +13,7 @@ describe('schema.js', () => {
 });
 
 describe('schema.js', () => {
-  it('try to get all field types from Json Schema', async () => {
+  it('try to get all field types from Json Schema', async() => {
     const schemaWithoutRef = await deReferenceSchema(schemaWithRef);
     const typePaths = _getFieldPaths(schemaWithoutRef);
     expect(typePaths).toContainEqual('$.properties.fruits');
@@ -31,7 +31,7 @@ describe('schema.js', () => {
 });
 
 describe('schema.js', () => {
-  it('try to get all fields that must be normalized from Json-Schema, using default config', async () => {
+  it('try to get all fields that must be normalized from Json-Schema, using default config', async() => {
     const schemaWithoutRef = await deReferenceSchema(schemaWithRef);
     const fields = getFieldsToNormalize(schemaWithoutRef);
 
@@ -51,7 +51,7 @@ describe('schema.js', () => {
     expect(fields).not.toContainEqual({ path: '$.definition.veggie.veggieName', type: 'string' });
   });
 
-  it('try to get all fields that must be normalized from Json-Schema, using excludePaths', async () => {
+  it('try to get all fields that must be normalized from Json-Schema, using excludePaths', async() => {
     const schemaWithoutRef = await deReferenceSchema(schemaWithRef);
     const fields = getFieldsToNormalize(schemaWithoutRef, {
       excludePaths: [{ type: 'string', format: 'date-time' }, { path: '$.vegetables[*].veggieColor' }],

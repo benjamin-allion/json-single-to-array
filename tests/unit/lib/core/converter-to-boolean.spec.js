@@ -1,7 +1,7 @@
 const JsonNodeNormalizer = require('../../../../index');
 
 describe('normalizer.js', () => {
-  it('try to normalize json data with some boolean values', async () => {
+  it('try to normalize json data with some boolean values', async() => {
     // Given
     const jsonToNormalize = {
       fields: {
