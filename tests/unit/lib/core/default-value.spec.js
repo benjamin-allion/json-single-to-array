@@ -8,31 +8,32 @@ describe('normalizer.js', () => {
         id: 123,
         name: 'my_name',
         firstName: 'firstName',
-        addresses: [{
-          enable: true,
-          details: [
-            {
-              label: 'detail_without_notes'
-            },
-            {
-              label: 'detail_with_notes',
-              notes: [{ content: 'note_test' }]
-            },
-            {} // Empty object
-          ]
-        },
-        {
-          enable: false,
-          details: [
-            {
-              label: 'detail_with_notes',
-              notes: [{ content: 'note_test' }]
-            },
-            {
-              label: 'detail_without_notes'
-            }
-          ]
-        }
+        addresses: [
+          {
+            enable: true,
+            details: [
+              {
+                label: 'detail_without_notes'
+              },
+              {
+                label: 'detail_with_notes',
+                notes: [{ content: 'note_test' }]
+              },
+              {} // Empty object
+            ]
+          },
+          {
+            enable: false,
+            details: [
+              {
+                label: 'detail_with_notes',
+                notes: [{ content: 'note_test' }]
+              },
+              {
+                label: 'detail_without_notes'
+              }
+            ]
+          }
         ],
         active: false
       }
