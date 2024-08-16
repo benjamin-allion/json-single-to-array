@@ -18,7 +18,7 @@ export default [
       //"linebreak-style": ["error", "unix"],
       "arrow-parens": 'off',
       "max-len": ["error", { "code": 140, "tabWidth": 4, "comments": 100, "ignoreUrls": true }],
-      "indent": ["error", 2],
+      "indent": ["error", 2, { "SwitchCase": 1 }],
       "semi": ["error", "always"],
       "no-console": 0,
       "block-scoped-var": "error",
