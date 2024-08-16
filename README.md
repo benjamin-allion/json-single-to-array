@@ -6,7 +6,7 @@ NodeJS module that normalize json data types from json schema specifications.
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/607fffb36855477dbbb9c8fbdc65d246)](https://app.codacy.com/app/benjamin-allion/json-node-normalizer?utm_source=github.com&utm_medium=referral&utm_content=benjamin-allion/json-node-normalizer&utm_campaign=Badge_Grade_Dashboard)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/9038356c6a6a4bae868867d1f7454ca8)](https://www.codacy.com/app/benjamin-allion/json-node-normalizer?utm_source=github.com&utm_medium=referral&utm_content=benjamin-allion/json-node-normalizer&utm_campaign=Badge_Coverage)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Node 12.3](https://img.shields.io/badge/node%20version-12.3-green.svg)](https://nodejs.org/en/download/)
+[![Node 22.6](https://img.shields.io/badge/node%20version-22.6-green.svg)](https://nodejs.org/en/download/)
 [![Uses yarn](https://img.shields.io/badge/deps-yarn-blue.svg)]()
 [![License](https://img.shields.io/github/license/bojand/json-schema-deref.svg?style=flat-square)](https://raw.githubusercontent.com/bojand/json-schema-deref/master/LICENSE)
 
