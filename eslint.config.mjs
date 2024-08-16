@@ -15,7 +15,7 @@ export default [
       "comma-dangle": 'off',
       "no-use-before-define": 'off',
       "class-methods-use-this": 'off',
-      //"linebreak-style": ["error", "unix"],
+      "linebreak-style": ["error", "unix"],
       "arrow-parens": 'off',
       "max-len": ["error", { "code": 140, "tabWidth": 4, "comments": 100, "ignoreUrls": true }],
       "indent": ["error", 2, { "SwitchCase": 1 }],
@@ -77,7 +77,7 @@ export default [
       "semi-spacing": "error",
       "semi-style": ["error", "last"],
       "space-before-blocks": ["error", "always"],
-      //"space-before-function-paren": ["error", "never"],
+      "space-before-function-paren": ["error", "never"],
       "space-in-parens": ["error", "never"]
     }
   },
