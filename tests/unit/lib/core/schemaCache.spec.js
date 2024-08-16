@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 const SchemaCache = require('../../../../lib/core/schemaCache');
 const { FormatTypes } = require('../../../../lib/core/formats');
 const JsonNodeNormalizer = require('../../../../index');
@@ -11,7 +10,7 @@ const JsonNodeNormalizer = require('../../../../index');
 const sleepy = ms => new Promise(resolve => { setTimeout(() => resolve(), ms); });
 
 describe('schemaCache.js', () => {
-  it('should store object data into the cache', async () => {
+  it('should store object data into the cache', async() => {
     // Given
     const objectToStore = {
       test: "OK"
@@ -27,7 +26,7 @@ describe('schemaCache.js', () => {
     await sleepy(200); // Wait for cache clear
   });
 
-  it('should remove object from cache after delay', async () => {
+  it('should remove object from cache after delay', async() => {
     // Given
     const objectToStore = {
       test: "OK"
@@ -41,7 +40,7 @@ describe('schemaCache.js', () => {
     expect(SchemaCache.getData('objectTest')).toEqual(undefined);
   });
 
-  it(`'fieldsToNormalize' should be store & removed from the cache`, async () => {
+  it(`'fieldsToNormalize' should be store & removed from the cache`, async() => {
     // Given
     const cacheSpy = jest.spyOn(SchemaCache, 'setData');
     const jsonData = {
@@ -100,7 +99,7 @@ describe('schemaCache.js', () => {
     jest.clearAllMocks();
   });
 
-  it(`Should clear cache between each calls`, async () => {
+  it(`Should clear cache between each calls`, async() => {
     // Given
     const cacheSpy = jest.spyOn(SchemaCache, 'setData');
     const jsonData = {

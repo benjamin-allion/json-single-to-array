@@ -1,3 +1,3 @@
 describe('start.js', () => {
-  it('launching the app', async () => {});
+  it('launching the app', async() => {});
 });
