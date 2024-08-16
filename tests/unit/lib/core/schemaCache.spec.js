@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 const SchemaCache = require('../../../../lib/core/schemaCache');
 const { FormatTypes } = require('../../../../lib/core/formats');
 const JsonNodeNormalizer = require('../../../../index');

@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 const JsonNodeNormalizer = require('../../../../index');
 
 describe('oasFlatter.js', () => {
